@@ -122,3 +122,9 @@ CLI изолирует настройки Prefect текущего процес�
 
 [Подробный конспект](NOTES.md), [технологии и полный lock](TECHNOLOGIES.md),
 [концепция](CONCEPT.md), [фактические проверки](VALIDATION.md).
+
+## GitHub
+
+[Исходники](https://github.com/Decl1s/prefect-sales-flow),
+[сборка v0.1.1 с ZIP и SHA256SUMS](https://github.com/Decl1s/prefect-sales-flow/releases/tag/v0.1.1),
+[19 тестов и Prefect smoke на Linux/Windows](https://github.com/Decl1s/prefect-sales-flow/actions/runs/39501013966).

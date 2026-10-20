@@ -14,7 +14,7 @@
 | unittest, tempfile, mock | Стандартная библиотека Python 3.12 | Контракт, файловые сбои, временные примеры | https://docs.python.org/3.12/library/unittest.html |
 | ZIP | zipfile стандартной библиотеки | Архив исходников по явному списку | https://docs.python.org/3.12/library/zipfile.html |
 | Git | Локально 2.43.0 | Отдельная история проекта, контроль списка файлов | https://git-scm.com/docs |
-| GitHub Actions | Конфигурация Ubuntu и Windows, Python 3.12 | Тесты, настоящий Prefect, архив | https://docs.github.com/ru/actions |
+| GitHub Actions | Проверены Ubuntu и Windows, Python 3.12 | Тесты, настоящий Prefect, архив | https://docs.github.com/ru/actions |
 | actions/checkout | v4, SHA в ci.yml | Получение исходников без сохранения учётных данных | https://github.com/actions/checkout |
 | actions/setup-python | v5, SHA в ci.yml | Python 3.12 на runner | https://github.com/actions/setup-python |
 | actions/upload-artifact | v4, SHA в ci.yml | ZIP и SHA256SUMS как результат проверки | https://github.com/actions/upload-artifact |
