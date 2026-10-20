@@ -1,0 +1,76 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "debugpy",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "windows": {
+        "python": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+      },
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONUTF8": "1"
+      },
+      "preLaunchTask": "01 — Подготовить учебные CSV",
+      "name": "Учебный разбор: шаги без Prefect",
+      "program": "${workspaceFolder}/scripts/workshop.py",
+      "args": [
+        "preview",
+        "--case",
+        "baseline"
+      ]
+    },
+    {
+      "type": "debugpy",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "windows": {
+        "python": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+      },
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONUTF8": "1"
+      },
+      "preLaunchTask": "01 — Подготовить учебные CSV",
+      "name": "Конвейер Prefect: обычный запуск",
+      "module": "sales_flow",
+      "args": [
+        "run",
+        "--input",
+        "workspace/learn/input/baseline.csv",
+        "--output",
+        "workspace/learn/output",
+        "--prefect-home",
+        "workspace/learn/prefect",
+        "--fail-once"
+      ]
+    },
+    {
+      "type": "debugpy",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "windows": {
+        "python": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+      },
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONUTF8": "1"
+      },
+      "preLaunchTask": "01 — Подготовить учебные CSV",
+      "name": "Разбор конфликта ID без Prefect",
+      "program": "${workspaceFolder}/scripts/workshop.py",
+      "args": [
+        "preview",
+        "--case",
+        "conflict"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+.venv/
+.tools/
+.cache/
+workspace/
+artifacts/
+__pycache__/
+*.py[cod]
+.env*
+.prefect/

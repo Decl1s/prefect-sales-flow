@@ -1,0 +1,10 @@
+[project]
+name = "prefect-sales-flow"
+version = "0.1.1"
+description = "Учебный конвейер продаж с проверкой качества и повтором шага на Prefect"
+requires-python = ">=3.12,<3.13"
+dependencies = ["prefect==3.8.8"]
+
+[tool.uv]
+package = false
+required-version = "==0.13.1"
